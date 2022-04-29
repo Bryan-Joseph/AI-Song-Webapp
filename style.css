@@ -1,0 +1,27 @@
+body{
+    background-image: url(img/bg.png);
+    background-size: cover;
+
+    overflow-x: hidden;
+}
+
+canvas{
+    /* border: 10px ridge red; */
+
+    animation-name: borderCC;
+    animation-duration:5s;
+    animation-timing-function:ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+    border-radius: 20px;
+
+    box-shadow: 10px 10px 10px black;
+}
+
+@keyframes borderCC {
+    0%{border: 15px ridge red;}
+    50%{border: 15px ridge blue;}
+    100%{border: 15px ridge red;}
+}
